@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { caveat, poppins } from "./fonts";
-import Link from "next/link";
+import { caveat, ownersText, poppins } from "./fonts";
 import PageAnimatePresence from "./_ui/PageAnimatePresence";
 
 export const metadata: Metadata = {
@@ -26,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${caveat.variable} font-primary bg-background min-w-[1024px]`}
+        className={`${poppins.variable} ${caveat.variable} ${ownersText.variable} font-primary text-textPrimary bg-background min-w-[1024px]`}
       >
         <PageAnimatePresence>
           <div className="w-full overflow-x-hidden">{children}</div>

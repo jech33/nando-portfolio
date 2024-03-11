@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import useRoutesStatus from "./_hooks/useRoutesStatus";
 import Image from "next/image";
 import Link from "next/link";
+import { useNandoStore } from "./_store/nandoStore";
 
 const Template = ({
   children,
@@ -22,30 +23,14 @@ const Template = ({
 
   return (
     <motion.div
-      className="flex h-[100svh] w-full max-h-[100svh] shadow-2xl bg-black"
+      className="flex h-[100svh] w-full max-h-[100svh] bg-white"
       variants={variants}
       initial={isStatic ? "static" : "right"}
       animate={"static"}
       exit={"exitStatic"}
       transition={{ type: "just", duration: 0.5 }}
     >
-      <div className="h-full w-1/2">{children}</div>
-      <div className="relative h-full w-1/2">
-        <Image
-          className="object-cover"
-          alt="nando-image-1"
-          fill
-          src="/assets/nando-image-1.png"
-        />
-        <Link href="/" className="absolute right-4 bottom-4">
-          <Image
-            src={"/assets/logo.svg"}
-            height={52}
-            width={52}
-            alt="nandologia-logo"
-          />
-        </Link>
-      </div>
+      <div className="h-full w-full shadow-2xl">{children}</div>
     </motion.div>
   );
 };

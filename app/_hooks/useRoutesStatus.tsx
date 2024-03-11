@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useNandoStore } from "../_store/nandoStore";
 
 const useRoutesStatus = () => {
   const routesOrder = [
@@ -12,10 +13,7 @@ const useRoutesStatus = () => {
     "/work/4",
   ];
   const pathname = usePathname();
-  const prevRoute =
-    typeof sessionStorage !== "undefined"
-      ? sessionStorage.getItem("prevRoute") || ""
-      : "";
+  const prevRoute = useNandoStore((state) => state.prevRoute);
 
   const prevRouteIndex = routesOrder.indexOf(prevRoute);
   const currentRouteIndex = routesOrder.indexOf(pathname);
@@ -24,7 +22,7 @@ const useRoutesStatus = () => {
   const isStatic = prevRouteIndex === currentRouteIndex || prevRoute === "";
 
   useEffect(() => {
-    sessionStorage.setItem("prevRoute", pathname);
+    useNandoStore.setState({ prevRoute: pathname });
   }, [pathname]);
   return {
     isGoingBack,

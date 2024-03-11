@@ -1,5 +1,6 @@
+import NandoLayout from "../_ui/NandoLayout";
+import { nandoImages } from "../_utils/nandoImages";
+
 export default function Work() {
-  return (
-    <article className="bg-background h-full w-full shadow-2xl">WORK</article>
-  );
+  return <NandoLayout images={nandoImages.work}>WORK</NandoLayout>;
 }

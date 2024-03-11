@@ -1,5 +1,6 @@
+import NandoLayout from "../_ui/NandoLayout";
+import { nandoImages } from "../_utils/nandoImages";
+
 export default function About() {
-  return (
-    <article className="bg-background h-full w-full shadow-2xl">ABOUT</article>
-  );
+  return <NandoLayout images={nandoImages.about}>ABOUT</NandoLayout>;
 }
