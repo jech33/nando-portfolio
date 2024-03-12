@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { caveat, ownersText, poppins } from "./fonts";
-import PageAnimatePresence from "./_ui/PageAnimatePresence";
+import PageTransition from "./_ui/PageTransition";
 
 export const metadata: Metadata = {
   title: "Hernando Saieh",
@@ -27,9 +27,9 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${caveat.variable} ${ownersText.variable} font-primary text-textPrimary bg-background min-w-[1024px]`}
       >
-        <PageAnimatePresence>
-          <div className="w-full overflow-x-hidden">{children}</div>
-        </PageAnimatePresence>
+        <div className="relative min-h-[100svh] w-full overflow-x-hidden">
+          <PageTransition>{children}</PageTransition>
+        </div>
       </body>
     </html>
   );

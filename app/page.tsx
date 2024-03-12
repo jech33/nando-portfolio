@@ -1,9 +1,12 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { assetsImages, nandoImages } from "./_utils/nandoImages";
+import useNandoAnimations from "./_hooks/useNandoAnimations";
 import NandoLayout from "./_ui/NandoLayout";
 
-export default function Home() {
+function Home() {
+  const { setExitAnimationStatic } = useNandoAnimations();
   return (
     <NandoLayout images={nandoImages.home}>
       <div className="flex flex-col gap-14 items-center justify-center relative h-full w-full">
@@ -27,16 +30,17 @@ export default function Home() {
           </p>
         </div>
         <div className="begin-container">
-          <Link className="flex gap-6 p-2 my-7" href="/about">
+          <Link
+            className="flex gap-6 p-2 my-7 items-center"
+            href="/about"
+            onClick={() => {
+              setExitAnimationStatic();
+            }}
+          >
             <span className="text-[46px] font-semibold text-primary">
               Begin
             </span>
-            <Image
-              src="/icons/arrow-right.svg"
-              width={65}
-              height={51}
-              alt="arrow-right"
-            />
+            <Image src={assetsImages.ArrowRight} alt="arrow-right" />
           </Link>
         </div>
         <div className="tooltip-container"></div>
@@ -49,3 +53,5 @@ export default function Home() {
     </NandoLayout>
   );
 }
+
+export default Home;

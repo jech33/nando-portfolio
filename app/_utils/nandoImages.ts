@@ -5,6 +5,7 @@ import NandoImageWork from "../../public/assets/nando-image-work.png";
 import CircleSquare from "../../public/assets/circle-square.svg";
 import LineDoodle from "../../public/assets/line-doodle.svg";
 import ArrowRightDoodle from "../../public/assets/arrow-right-doodle.svg";
+import ArrowRight from "../../public/assets/arrow-right.svg";
 
 export const nandoImages = {
   home: [NandoImageHome],
@@ -13,6 +14,7 @@ export const nandoImages = {
 };
 
 export const assetsImages = {
+  ArrowRight,
   ArrowRightDoodle,
   CircleSquare,
   LineDoodle,
