@@ -34,7 +34,7 @@ export default function PageTransition({ children }: { children: ReactNode }) {
         animate={"static"}
         exit={exitAnimation}
         transition={{ type: "just", duration: 0.5 }}
-        style={{ zIndex: currentRouteIndex }}
+        style={{ zIndex: currentRouteIndex, position: "absolute" }}
       >
         <FrozenRoute>{children}</FrozenRoute>
       </motion.div>

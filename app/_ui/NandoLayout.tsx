@@ -1,7 +1,7 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { assetsImages } from "../_utils/nandoImages";
+import { nandoIconsAssets } from "../_utils/nandoAssets";
 import useNandoAnimations from "../_hooks/useNandoAnimations";
 
 const NandoLayout = ({
@@ -13,13 +13,13 @@ const NandoLayout = ({
 }>) => {
   const { setExitAnimationRight } = useNandoAnimations();
   return (
-    <div className="h-full w-full flex shadow-2xl">
+    <div className="h-full w-full flex shadow-2xl bg-background [&_b]:font-semibold">
       <Image
-        className="absolute top-6 left-0 z-0"
-        src={assetsImages.LineDoodle}
+        className="absolute top-9 left-0"
+        src={nandoIconsAssets.LineDoodle}
         alt="line-doodle"
       />
-      <article className="bg-background h-full w-1/2 p-5 flex flex-col justify-center items-center shadow-lg">
+      <article className="relative h-full w-1/2 py-32 pl-20 pr-28 flex flex-col justify-center items-center shadow-lg">
         {children}
       </article>
       <div className="relative h-full w-1/2 overflow-hidden flex flex-col items-stretch justify-stretch bg-white">
