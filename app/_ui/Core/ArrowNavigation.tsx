@@ -8,29 +8,35 @@ const ArrowNavigation = ({
   hrefNext,
   hrefBack,
 }: {
-  hrefNext: string;
-  hrefBack: string;
+  hrefNext?: string;
+  hrefBack?: string;
 }) => {
   const { setExitAnimationRight, setExitAnimationStatic } =
     useNandoAnimations();
+
+  const disabledClass = "opacity-50 cursor-not-allowed";
+  const backDisabled = !hrefBack ? disabledClass : "";
+  const nextDisabled = !hrefNext ? disabledClass : "";
   return (
     <div className="arrow-navigation__container px-6 py-3 flex gap-4 items-center absolute bottom-8 right-0">
-      <Link href={hrefBack} onClick={() => setExitAnimationRight()}>
+      <Link
+        className={backDisabled}
+        href={hrefBack || ""}
+        onClick={() => setExitAnimationRight()}
+      >
         <Image
           className="rotate-180"
           src={nandoIconsAssets.ArrowRight}
-          height={24}
-          width={24}
           alt="next arrow"
+          height={24}
         />
       </Link>
-      <Link href={hrefNext} onClick={() => setExitAnimationStatic()}>
-        <Image
-          src={nandoIconsAssets.ArrowRight}
-          alt="next arrow"
-          height={24}
-          width={24}
-        />
+      <Link
+        className={nextDisabled}
+        href={hrefNext || ""}
+        onClick={() => setExitAnimationStatic()}
+      >
+        <Image src={nandoIconsAssets.ArrowRight} alt="next arrow" height={24} />
       </Link>
     </div>
   );

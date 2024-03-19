@@ -3,8 +3,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { ReactNode, useEffect, useState } from "react";
-import useRoutesStatus from "../_hooks/useRoutesStatus";
-import { useNandoStore } from "../_store/nandoStore";
+import useRoutesStatus from "../../_hooks/useRoutesStatus";
+import { useNandoStore } from "../../_store/nandoStore";
 import FrozenRoute from "./FrozenRoute";
 
 const env = process.env.NODE_ENV;
@@ -36,7 +36,11 @@ export default function PageTransition({ children }: { children: ReactNode }) {
         transition={{ type: "just", duration: 0.5 }}
         style={{ zIndex: currentRouteIndex, position: "absolute" }}
       >
-        <FrozenRoute>{children}</FrozenRoute>
+        {env === "development" ? (
+          children
+        ) : (
+          <FrozenRoute>{children}</FrozenRoute>
+        )}
       </motion.div>
     </AnimatePresence>
   );

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { caveat, ownersText, poppins } from "./fonts";
-import PageTransition from "./_ui/PageTransition";
+import { caveat, ownersText, poppins } from "./_fonts";
+import PageTransition from "./_ui/layout/PageTransition";
 
 export const metadata: Metadata = {
   title: "Hernando Saieh",
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${caveat.variable} ${ownersText.variable} font-primary text-textPrimary bg-background min-w-[1024px]`}
+        className={`${poppins.variable} ${caveat.variable} ${ownersText.variable} min-w-[1440px] bg-background font-primary text-textPrimary`}
       >
         <div className="relative min-h-[100svh] w-full overflow-x-hidden">
           <PageTransition>{children}</PageTransition>

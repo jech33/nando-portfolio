@@ -7,8 +7,10 @@ const textVariants = cva(`text-2xl`, {
   variants: {
     variant: {
       heading: "font-heading text-[2.625rem] font-medium",
+      heading2: "font-heading text-[2.25rem] font-medium",
+      subheading: "font-secondary text-[4rem] text-primary",
       body1: "text-2xl",
-      body2: "font-secondary text-primary text-[2.125rem]",
+      tooltip: "font-secondary text-primary text-[2.125rem]",
       link: "text-primary underline font-semibold",
     },
     color: {

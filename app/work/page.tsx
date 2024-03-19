@@ -1,12 +1,70 @@
-import ArrowNavigation from "../_ui/Core/ArrowNavigation";
-import NandoLayout from "../_ui/NandoLayout";
-import { nandoImages } from "../_utils/nandoAssets";
+import Image from "next/image";
+import Link from "../_ui/core/Link";
+import Text from "../_ui/core/Text";
+import NandoLayout from "../_ui/layout/NandoLayout";
+import { nandoIconsAssets, nandoImages } from "../_utils/nandoAssets";
 
 export default function Work() {
+  const projects = [
+    {
+      title: "millave",
+      href: "/work/1",
+    },
+    {
+      title: "Joynup",
+      href: "/work/2",
+    },
+    {
+      title: "CareSync",
+      href: "/work/3",
+    },
+    {
+      title: "SwiftRide",
+      href: "/work/4",
+    },
+  ];
   return (
-    <NandoLayout images={nandoImages.work}>
-      WORK
-      <ArrowNavigation hrefNext="/" hrefBack="/about" />
+    <NandoLayout
+      images={nandoImages.work}
+      navProps={{
+        hasArrowNavigation: true,
+        hasNavbar: true,
+        hrefBack: "/about",
+        hrefNext: "/work/1",
+      }}
+    >
+      <div className="flex h-full flex-col items-center gap-20 px-32 pt-48 text-center">
+        <Text tag="h1" variant="heading">
+          My Projects
+        </Text>
+        <ol className="flex w-[23.75rem] list-decimal flex-col gap-9 font-heading text-[2.25rem] font-medium [&_h2]:pl-1">
+          {projects.map((project) => (
+            <li key={project.title}>
+              <div className="flex items-center justify-between">
+                <Text tag="h2" variant="heading2">
+                  {project.title}
+                </Text>
+                <Link href={project.href}>
+                  <Image
+                    src={nandoIconsAssets.ArrowRight}
+                    alt="arrow-right"
+                    height={32}
+                  />
+                </Link>
+              </div>
+            </li>
+          ))}
+        </ol>
+        <Text className="absolute bottom-60 max-w-[43.25rem]" variant="tooltip">
+          Pro Tip: You can also navigate the portfolio and come back to this
+          index by using the controls below.
+          <Image
+            className="absolute -bottom-[8.25rem] -left-8 -rotate-[75deg] -scale-x-[1]"
+            src={nandoIconsAssets.CurvedLineDoodle}
+            alt="curved arrow doodle"
+          />
+        </Text>
+      </div>
     </NandoLayout>
   );
 }

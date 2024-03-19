@@ -3,7 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { nandoIconsAssets, nandoImages } from "./_utils/nandoAssets";
 import useNandoAnimations from "./_hooks/useNandoAnimations";
-import NandoLayout from "./_ui/NandoLayout";
+import NandoLayout from "./_ui/layout/NandoLayout";
+import Text from "./_ui/core/Text";
+import { routes } from "./_routes/routes";
 
 function Home() {
   const { setExitAnimationStatic } = useNandoAnimations();
@@ -11,9 +13,9 @@ function Home() {
     <NandoLayout images={nandoImages.home}>
       <div className="flex flex-col gap-14 items-center justify-center h-full w-full">
         <div className="absolute right-7 top-[4.125rem] flex gap-4 items-start">
-          <p className="font-secondary text-primary text-[2.125rem] w-[17rem]">
+          <Text variant="tooltip" className="w-[17rem]">
             Image to the right may take a bit to load
-          </p>
+          </Text>
           <Image
             className="py-6"
             src={nandoIconsAssets.ArrowRightDoodle}
@@ -25,14 +27,14 @@ function Home() {
             Hernando Saieh
           </h1>
           <h2 className="text-[2.625rem] mb-7">Product Designer Portfolio</h2>
-          <p className="font-secondary text-[4rem] text-primary">
+          <Text tag="h3" variant="subheading">
             Embrace the creative flow
-          </p>
+          </Text>
         </div>
         <div className="begin-container">
           <Link
             className="flex gap-6 p-2 my-7 items-center"
-            href="/about"
+            href={routes.about}
             onClick={() => {
               setExitAnimationStatic();
             }}

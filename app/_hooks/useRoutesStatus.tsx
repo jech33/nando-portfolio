@@ -18,10 +18,12 @@ const useRoutesStatus = () => {
   }, [pathname]);
 
   return {
+    pathname,
     isGoingBack,
     isStatic,
     prevRoute,
     currentRouteIndex,
+    prevRouteIndex,
   };
 };
 
