@@ -60,7 +60,7 @@ const Work1 = () => {
       }}
     >
       <NandoLayoutArticle>
-        <div className="flex h-full flex-col items-start gap-6">
+        <div className="flex h-full flex-col items-start gap-6 ">
           <Text tag="h1" variant="heading">
             Building out the design...
           </Text>

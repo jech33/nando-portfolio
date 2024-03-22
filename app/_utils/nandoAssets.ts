@@ -10,6 +10,7 @@ import ArrowRightDoodle from "../../public/assets/arrow-right-doodle.svg";
 import ArrowRight from "../../public/assets/arrow-right.svg";
 import LogoMillave from "../../public/assets/millavelogo.png";
 import LogoJoynup from "../../public/assets/joynuplogo.png";
+import LogoCaresync from "../../public/assets/caresynclogo.png";
 import MockupMillave1 from "../../public/assets/millavemockup1.png";
 import MockupMillave2 from "../../public/assets/millavemockup2.png";
 import MockupMillave3 from "../../public/assets/millavemockup3.png";
@@ -18,6 +19,11 @@ import MockupJoynup1 from "../../public/assets/joynup1.png";
 import MockupJoynup2 from "../../public/assets/joynup2.png";
 import MockupJoynup3 from "../../public/assets/joynup3.png";
 import MockupJoynup4 from "../../public/assets/joynup4.png";
+import MockupCaresync1 from "../../public/assets/caresync1.png";
+import MockupCaresync2 from "../../public/assets/caresync2.png";
+import MockupCaresync3 from "../../public/assets/caresync3.png";
+import MockupCaresync4 from "../../public/assets/caresync4.png";
+import MockupCaresync5 from "../../public/assets/caresync5.png";
 
 export const nandoSidePanelImages = {
   about: [NandoImageAbout1, NandoImageAbout2],
@@ -34,6 +40,7 @@ export const nandoAssets = {
   LineDoodle,
   LogoMillave,
   LogoJoynup,
+  LogoCaresync,
   MockupMillave1,
   MockupMillave2,
   MockupMillave3,
@@ -42,4 +49,9 @@ export const nandoAssets = {
   MockupJoynup2,
   MockupJoynup3,
   MockupJoynup4,
+  MockupCaresync1,
+  MockupCaresync2,
+  MockupCaresync3,
+  MockupCaresync4,
+  MockupCaresync5,
 };

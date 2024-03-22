@@ -11,10 +11,10 @@ export default function About() {
       images={nandoSidePanelImages.contact}
       navProps={{
         hasArrowNavigation: true,
-        hrefBack: routes.work1Learning,
+        hrefBack: routes.work3Learning,
       }}
     >
-      <div className="no-scrollbar flex h-full flex-col items-center justify-center gap-20 overflow-y-scroll pb-16 text-center">
+      <div className="nflex h-full flex-col items-center justify-center gap-20 px-[152px] pb-16 text-center">
         <Image
           className="absolute top-12"
           src={nandoAssets.CircleSquare}
@@ -32,10 +32,14 @@ export default function About() {
               LinkedIn
             </Link>
             <br />
-            or hit me up at <b>nandosadi@gmail.com</b>.
+            or hit me up at{" "}
+            <a href="mailto:nandosadi@gmail.com">
+              <b>nandosadi@gmail.com</b>
+            </a>
+            .
           </Text>
         </div>
-        <Text variant="tooltip">
+        <Text variant="tooltip" className="max-w-[41.5625rem]">
           &quot;You can&apos;t understand good design if you do not understand
           people; design is made for people.&quot;
           <br />
