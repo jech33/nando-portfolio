@@ -46,11 +46,16 @@ const Navbar = () => {
           return (
             <li
               key={route.name}
-              className="flex flex-col items-center justify-end px-[.6875rem] pt-[.625rem] transition-all hover:text-primary"
+              className="group flex flex-col items-center justify-between px-[.6875rem] pt-[.625rem] transition-all hover:text-primary"
             >
               {route.path === routes.work && (
                 <BackIcon
-                  className={isCurrentRoute ? "[&_path]:fill-primary" : ""}
+                  className={`transition-all group-hover:[&_path]:fill-primary ${isCurrentRoute ? "[&_path]:fill-primary" : ""}`}
+                />
+              )}
+              {route.path !== routes.work && (
+                <div
+                  className={`h-[.375rem] w-[.375rem] rounded-full transition-all ${isCurrentRoute ? "bg-primary" : ""}`}
                 />
               )}
               <Link
