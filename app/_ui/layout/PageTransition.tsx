@@ -28,7 +28,7 @@ export default function PageTransition({ children }: { children: ReactNode }) {
     <AnimatePresence presenceAffectsLayout mode="popLayout">
       <motion.div
         key={pathname}
-        className={`flex h-[100svh] w-full max-h-[100svh] bg-white`}
+        className={`flex h-[100svh] max-h-[100svh] w-full bg-white`}
         variants={variants}
         initial={isStatic ? "static" : isGoingBack ? "static" : "right"}
         animate={"static"}

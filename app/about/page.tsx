@@ -1,4 +1,4 @@
-import { nandoIconsAssets, nandoImages } from "../_utils/nandoAssets";
+import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
 import NandoLayout from "../_ui/layout/NandoLayout";
 import Text from "../_ui/core/Text";
 import Link from "../_ui/core/Link";
@@ -9,7 +9,7 @@ import NandoLayoutArticle from "../_ui/layout/NandoLayoutArticle";
 export default function About() {
   return (
     <NandoLayout
-      images={nandoImages.about}
+      images={nandoSidePanelImages.about}
       navProps={{
         hasArrowNavigation: true,
         hrefBack: routes.home,
@@ -17,7 +17,7 @@ export default function About() {
       }}
     >
       <NandoLayoutArticle>
-        <div className="flex flex-col gap-6 h-full pb-16 overflow-y-scroll no-scrollbar">
+        <div className="no-scrollbar relative mb-16 flex h-full flex-col gap-6 overflow-y-scroll pb-6">
           <Text variant="heading">About Me</Text>
           <Text>
             Hello! 👋 I&apos;m Hernando Saieh. I currently work as a mid-level
@@ -72,13 +72,14 @@ export default function About() {
             .
           </Text>
         </div>
-        <div className="tooltip-container flex gap-4 absolute bottom-6 right-16">
+        <div className="absolute bottom-44 z-10 h-12 w-full bg-gradient-to-b from-transparent to-background to-40%" />
+        <div className="tooltip-container absolute bottom-6 right-16 flex gap-4">
           <Text variant="tooltip" className="max-w-[20.1875rem]">
             Use the arrows to the right to navigate this portfolio
           </Text>
           <Image
             className="relative -top-12"
-            src={nandoIconsAssets.CurvedLineDoodle}
+            src={nandoAssets.CurvedLineDoodle}
             alt={"curved-line-doodle.svg"}
           />
         </div>

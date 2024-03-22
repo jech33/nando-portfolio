@@ -6,7 +6,7 @@ const NandoLayoutArticle = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div className="py-32 pl-20 pr-28 flex flex-col justify-center items-center h-full">
+    <div className="no-scrollbar relative flex h-full max-h-full flex-col items-center justify-center overflow-y-scroll py-32 pl-20 pr-28">
       {children}
     </div>
   );

@@ -1,4 +1,4 @@
-import { nandoIconsAssets, nandoImages } from "../_utils/nandoAssets";
+import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
 import NandoLayout from "../_ui/layout/NandoLayout";
 import Text from "../_ui/core/Text";
 import Link from "../_ui/core/Link";
@@ -8,19 +8,19 @@ import { routes } from "../_routes/routes";
 export default function About() {
   return (
     <NandoLayout
-      images={nandoImages.contact}
+      images={nandoSidePanelImages.contact}
       navProps={{
         hasArrowNavigation: true,
         hrefBack: routes.work1Learning,
       }}
     >
-      <div className="flex flex-col gap-20 h-full pb-16 overflow-y-scroll no-scrollbar items-center justify-center text-center">
+      <div className="no-scrollbar flex h-full flex-col items-center justify-center gap-20 overflow-y-scroll pb-16 text-center">
         <Image
           className="absolute top-12"
-          src={nandoIconsAssets.CircleSquare}
+          src={nandoAssets.CircleSquare}
           alt="circle-square.svg"
         />
-        <div className="flex flex-col gap-5 mt-52">
+        <div className="mt-52 flex flex-col gap-5">
           <Text variant="heading">Let’s talk!</Text>
           <Text>
             You can find me on{" "}

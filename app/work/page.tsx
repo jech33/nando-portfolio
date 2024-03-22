@@ -1,10 +1,13 @@
+"use client";
 import Image from "next/image";
 import Link from "../_ui/core/Link";
 import Text from "../_ui/core/Text";
 import NandoLayout from "../_ui/layout/NandoLayout";
-import { nandoIconsAssets, nandoImages } from "../_utils/nandoAssets";
+import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
+import useNandoAnimations from "../_hooks/useNandoAnimations";
 
 export default function Work() {
+  const { setExitAnimationStatic } = useNandoAnimations();
   const projects = [
     {
       title: "millave",
@@ -25,7 +28,7 @@ export default function Work() {
   ];
   return (
     <NandoLayout
-      images={nandoImages.work}
+      images={nandoSidePanelImages.work}
       navProps={{
         hasArrowNavigation: true,
         hasNavbar: true,
@@ -33,7 +36,7 @@ export default function Work() {
         hrefNext: "/work/1",
       }}
     >
-      <div className="flex h-full flex-col items-center gap-20 px-32 pt-48 text-center">
+      <section className="flex h-full flex-col items-center gap-20 px-32 pt-48 text-center">
         <Text tag="h1" variant="heading">
           My Projects
         </Text>
@@ -44,9 +47,14 @@ export default function Work() {
                 <Text tag="h2" variant="heading2">
                   {project.title}
                 </Text>
-                <Link href={project.href}>
+                <Link
+                  href={project.href}
+                  onClick={() => {
+                    setExitAnimationStatic();
+                  }}
+                >
                   <Image
-                    src={nandoIconsAssets.ArrowRight}
+                    src={nandoAssets.ArrowRight}
                     alt="arrow-right"
                     height={32}
                   />
@@ -60,11 +68,11 @@ export default function Work() {
           index by using the controls below.
           <Image
             className="absolute -bottom-[8.25rem] -left-8 -rotate-[75deg] -scale-x-[1]"
-            src={nandoIconsAssets.CurvedLineDoodle}
+            src={nandoAssets.CurvedLineDoodle}
             alt="curved arrow doodle"
           />
         </Text>
-      </div>
+      </section>
     </NandoLayout>
   );
 }
