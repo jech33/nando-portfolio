@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const SideComponent = (
   <div className="flex h-full w-full flex-col items-center justify-center gap-4 overflow-hidden px-[132px]">
-    <figure className="flex w-full items-center justify-between gap-[4.6875rem]">
+    <figure className="flex w-full max-w-[45.5rem] items-center justify-between gap-[3.6875rem]">
       <div className="flex flex-col gap-6">
         <Image
           className="ml-9 -rotate-[60deg]"
@@ -29,7 +29,7 @@ const SideComponent = (
         placeholder="blur"
       />
     </figure>
-    <figure className="flex w-full items-center justify-between gap-[4.125rem]">
+    <figure className="flex w-full max-w-[45.5rem] items-center justify-between gap-[3.125rem]">
       <div className="flex flex-col gap-6">
         <Image
           className="ml-9 -rotate-[60deg]"
@@ -42,7 +42,6 @@ const SideComponent = (
         </Text>
       </div>
       <Image
-        className="flex-1"
         src={nandoAssets.MockupSwiftride4}
         alt="Swiftride mockup"
         priority
