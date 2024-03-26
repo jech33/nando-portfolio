@@ -10,7 +10,7 @@ import ArrowRightDoodle from "../../public/assets/arrow-right-doodle.svg";
 import ArrowRight from "../../public/assets/arrow-right.svg";
 import LogoMillave from "../../public/assets/millavelogo.png";
 import LogoJoynup from "../../public/assets/joynuplogo.png";
-import LogoCaresync from "../../public/assets/caresynclogo.png";
+import LogoCaresync from "../../public/assets/caresyncLogo.png";
 import LogoSwiftride from "../../public/assets/swiftridelogo.png";
 import MockupMillave1 from "../../public/assets/millavemockup1.png";
 import MockupMillave2 from "../../public/assets/millavemockup2.png";
