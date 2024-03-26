@@ -3,6 +3,7 @@ import Text from "@/app/_ui/core/Text";
 import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
+import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
 import Image from "next/image";
 
@@ -10,14 +11,14 @@ const Work1 = () => {
   return (
     <NandoLayout
       sideComponent={
-        <div className="flex h-full w-full items-center justify-center overflow-hidden">
+        <NandoSideImage>
           <Image
             src={nandoAssets.MockupMillave1}
             alt="millave"
             priority
             placeholder="blur"
           />
-        </div>
+        </NandoSideImage>
       }
       navProps={{
         hasArrowNavigation: true,

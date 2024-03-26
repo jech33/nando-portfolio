@@ -23,13 +23,14 @@ const Work1 = () => {
           </Link>
         </Text>
         <Image
+          className="max-h-[400px] object-contain"
           src={nandoAssets.MockupMillave2}
           alt="millave mockup 2"
           priority
           placeholder="blur"
         />
       </div>
-      <div className="flex flex-col items-center gap-6">
+      <div className="flex max-h-[50%] flex-col items-center gap-6">
         <Text variant="caption">
           Mobile Screens.{" "}
           <Link
@@ -41,6 +42,7 @@ const Work1 = () => {
           </Link>
         </Text>
         <Image
+          className="max-h-[400px] object-contain"
           src={nandoAssets.MockupMillave3}
           alt="millave mockup 2"
           priority

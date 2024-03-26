@@ -5,56 +5,24 @@ import UnorderedList from "@/app/_ui/core/UnorderedList";
 import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
+import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
 import Image from "next/image";
-
-const SideComponent = (
-  <div className="flex h-full w-full flex-col items-center justify-center gap-4 overflow-hidden px-[132px]">
-    <figure className="flex w-full max-w-[45.5rem] items-center justify-between gap-[3.6875rem]">
-      <div className="flex flex-col gap-6">
-        <Image
-          className="ml-9 -rotate-[60deg]"
-          src={nandoAssets.CurvedLineDoodle}
-          alt="Curved line doodle"
-          priority
-        />
-        <Text variant="bodyBig" tag="figcaption" className="whitespace-nowrap">
-          Old Design
-        </Text>
-      </div>
-      <Image
-        src={nandoAssets.MockupSwiftride3}
-        alt="Swiftride mockup"
-        priority
-        placeholder="blur"
-      />
-    </figure>
-    <figure className="flex w-full max-w-[45.5rem] items-center justify-between gap-[3.125rem]">
-      <div className="flex flex-col gap-6">
-        <Image
-          className="ml-9 -rotate-[60deg]"
-          src={nandoAssets.CurvedLineDoodle}
-          alt="Curved line doodle"
-          priority
-        />
-        <Text variant="bodyBig" tag="figcaption" className="whitespace-nowrap">
-          New Design
-        </Text>
-      </div>
-      <Image
-        src={nandoAssets.MockupSwiftride4}
-        alt="Swiftride mockup"
-        priority
-        placeholder="blur"
-      />
-    </figure>
-  </div>
-);
 
 const Work4Learning = () => {
   return (
     <NandoLayout
-      sideComponent={SideComponent}
+      sideComponent={
+        <NandoSideImage>
+          <Image
+            className="max-h-full max-w-[650px] object-contain"
+            src={nandoAssets.MockupSwiftride3}
+            alt="swiftride mockup"
+            priority
+            placeholder="blur"
+          />
+        </NandoSideImage>
+      }
       navProps={{
         hasArrowNavigation: true,
         hasNavbar: true,

@@ -3,21 +3,20 @@ import Text from "@/app/_ui/core/Text";
 import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
+import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
 import Image from "next/image";
 
 const SideComponent = (
-  <figure className="flex h-full w-full flex-col items-start justify-center gap-4 overflow-hidden px-[8.25rem]">
-    <Text tag="figcaption" variant="caption" className="px-4">
-      Figma File Structure
-    </Text>
+  <NandoSideImage>
     <Image
-      src={nandoAssets.MockupCaresync5}
+      className="max-h-full max-w-[550px] 2xl:max-w-[650px]"
+      src={nandoAssets.MockupCaresync3}
       alt="Caresync mockup"
       priority
       placeholder="blur"
     />
-  </figure>
+  </NandoSideImage>
 );
 
 const Work3Learning = () => {

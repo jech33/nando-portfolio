@@ -3,48 +3,21 @@ import Text from "@/app/_ui/core/Text";
 import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
+import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
 import Image from "next/image";
 import { ReactNode } from "react";
 
 const SideComponent: ReactNode = (
-  <div className="flex h-full w-full flex-col items-start gap-8 overflow-hidden px-[4rem] pt-20">
-    <div className="flex items-start gap-8">
-      <figure className="flex flex-col items-start gap-4">
-        <Text tag="figcaption" variant="caption">
-          Original Design
-        </Text>
-        <Image
-          src={nandoAssets.MockupCaresync2}
-          alt="Caresync mockup 2"
-          priority
-          placeholder="blur"
-        />
-      </figure>
-      <figure className="flex flex-col items-start gap-4">
-        <Text tag="figcaption" variant="caption">
-          Simplified Design
-        </Text>
-        <Image
-          src={nandoAssets.MockupCaresync3}
-          alt="Caresync mockup 3"
-          priority
-          placeholder="blur"
-        />
-      </figure>
-    </div>
-    <figure className="flex flex-col items-start gap-4">
-      <Text tag="figcaption" variant="caption">
-        Availability rule variant examples{" "}
-      </Text>
-      <Image
-        src={nandoAssets.MockupCaresync4}
-        alt="Caresync mockup 4"
-        priority
-        placeholder="blur"
-      />
-    </figure>
-  </div>
+  <NandoSideImage>
+    <Image
+      className="px-16"
+      src={nandoAssets.MockupCaresync2}
+      alt="Caresync mockup 2"
+      priority
+      placeholder="blur"
+    />
+  </NandoSideImage>
 );
 
 const Work3Design = () => {

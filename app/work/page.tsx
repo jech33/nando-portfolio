@@ -36,7 +36,7 @@ export default function Work() {
         hrefNext: "/work/1",
       }}
     >
-      <section className="flex h-full flex-col items-center gap-20 px-32 pt-48 text-center">
+      <section className="mb-32 flex h-full flex-col items-center justify-center gap-20 px-32 text-center">
         <Text tag="h1" variant="heading">
           My Projects
         </Text>
@@ -63,11 +63,14 @@ export default function Work() {
             </li>
           ))}
         </ol>
-        <Text className="absolute bottom-60 max-w-[43.25rem]" variant="tooltip">
+        <Text
+          className="absolute bottom-28 max-w-[43.25rem] px-6 2xl:bottom-60 2xl:px-0"
+          variant="tooltip"
+        >
           Pro Tip: You can also navigate the portfolio and come back to this
           index by using the controls below.
           <Image
-            className="absolute -bottom-[8.25rem] -left-8 -rotate-[75deg] -scale-x-[1]"
+            className="absolute -bottom-[8.25rem] -left-8 hidden -rotate-[75deg] -scale-x-[1] 2xl:block"
             src={nandoAssets.CurvedLineDoodle}
             alt="curved arrow doodle"
           />

@@ -12,23 +12,19 @@ import LogoMillave from "../../public/assets/millavelogo.png";
 import LogoJoynup from "../../public/assets/joynuplogo.png";
 import LogoCaresync from "../../public/assets/caresyncLogo.png";
 import LogoSwiftride from "../../public/assets/swiftridelogo.png";
-import MockupMillave1 from "../../public/assets/millavemockup1.png";
-import MockupMillave2 from "../../public/assets/millavemockup2.png";
-import MockupMillave3 from "../../public/assets/millavemockup3.png";
-import MockupMillave4 from "../../public/assets/millavemockup4.png";
-import MockupJoynup1 from "../../public/assets/joynup1.png";
-import MockupJoynup2 from "../../public/assets/joynup2.png";
-import MockupJoynup3 from "../../public/assets/joynup3.png";
-import MockupJoynup4 from "../../public/assets/joynup4.png";
-import MockupCaresync1 from "../../public/assets/caresync1.png";
-import MockupCaresync2 from "../../public/assets/caresync2.png";
-import MockupCaresync3 from "../../public/assets/caresync3.png";
-import MockupCaresync4 from "../../public/assets/caresync4.png";
-import MockupCaresync5 from "../../public/assets/caresync5.png";
-import MockupSwiftride1 from "../../public/assets/swiftride1.png";
-import MockupSwiftride2 from "../../public/assets/swiftride2.png";
-import MockupSwiftride3 from "../../public/assets/swiftride3.png";
-import MockupSwiftride4 from "../../public/assets/swiftride4.png";
+import MockupMillave1 from "../../public/assets/work1.png";
+import MockupMillave2 from "../../public/assets/work1-design desktop.png";
+import MockupMillave3 from "../../public/assets/work1-design mobile.png";
+import MockupMillave4 from "../../public/assets/work1-learning.png";
+import MockupJoynup1 from "../../public/assets/work2.png";
+import MockupJoynup2 from "../../public/assets/work2-design.png";
+import MockupJoynup3 from "../../public/assets/work2-learning.png";
+import MockupCaresync1 from "../../public/assets/work3.png";
+import MockupCaresync2 from "../../public/assets/work3-design.png";
+import MockupCaresync3 from "../../public/assets/work3-learning.png";
+import MockupSwiftride1 from "../../public/assets/work4.png";
+import MockupSwiftride2 from "../../public/assets/work4-design.png";
+import MockupSwiftride3 from "../../public/assets/work4-learning.png";
 
 export const nandoSidePanelImages = {
   about: [NandoImageAbout1, NandoImageAbout2],
@@ -54,14 +50,10 @@ export const nandoAssets = {
   MockupJoynup1,
   MockupJoynup2,
   MockupJoynup3,
-  MockupJoynup4,
   MockupCaresync1,
   MockupCaresync2,
   MockupCaresync3,
-  MockupCaresync4,
-  MockupCaresync5,
   MockupSwiftride1,
   MockupSwiftride2,
   MockupSwiftride3,
-  MockupSwiftride4,
 };

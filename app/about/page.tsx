@@ -73,8 +73,11 @@ export default function About() {
           </Text>
         </div>
         <div className="absolute bottom-44 z-10 h-12 w-full bg-gradient-to-b from-transparent to-background to-40%" />
-        <div className="tooltip-container absolute bottom-6 right-16 flex gap-4">
-          <Text variant="tooltip" className="max-w-[20.1875rem]">
+        <div className="tooltip-container absolute bottom-6 right-16 flex 2xl:gap-4">
+          <Text
+            variant="tooltip"
+            className="max-w-[16rem] 2xl:max-w-[20.1875rem]"
+          >
             Use the arrows to the right to navigate this portfolio
           </Text>
           <Image

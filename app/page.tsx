@@ -23,10 +23,12 @@ function Home() {
           />
         </div>
         <div className="headings-wrapper text-center">
-          <h1 className="font-heading text-[5rem] font-[500]">
+          <h1 className="font-heading text-[4.5rem] font-[500] 2xl:text-[5rem]">
             Hernando Saieh
           </h1>
-          <h2 className="mb-7 text-[2.625rem]">Product Designer Portfolio</h2>
+          <h2 className="mb-7 text-[2.125rem] 2xl:text-[2.625rem]">
+            Product Designer Portfolio
+          </h2>
           <Text tag="h3" variant="subheading">
             Embrace the creative flow
           </Text>

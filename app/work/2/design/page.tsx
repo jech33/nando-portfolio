@@ -4,32 +4,22 @@ import Text from "@/app/_ui/core/Text";
 import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
+import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
 import Image from "next/image";
 import { ReactNode } from "react";
 
 const Work2Design = () => {
   const SideComponent: ReactNode = (
-    <div className="flex h-full w-full items-start justify-center gap-16 overflow-hidden px-[8.25rem] pt-20">
-      <div className="flex flex-col items-center gap-6">
-        <Text variant="caption">Original Design</Text>
-        <Image
-          src={nandoAssets.MockupJoynup2}
-          alt="joynup mockup 2"
-          priority
-          placeholder="blur"
-        />
-      </div>
-      <div className="flex flex-col items-center gap-6">
-        <Text variant="caption">Simplified Design</Text>
-        <Image
-          src={nandoAssets.MockupJoynup3}
-          alt="joynup mockup 2"
-          priority
-          placeholder="blur"
-        />
-      </div>
-    </div>
+    <NandoSideImage>
+      <Image
+        className="max-h-full max-w-[600px] object-contain"
+        src={nandoAssets.MockupJoynup2}
+        alt="joynup mockup 2"
+        priority
+        placeholder="blur"
+      />
+    </NandoSideImage>
   );
 
   return (
