@@ -18,6 +18,8 @@ const Work2Design = () => {
         alt="joynup mockup 2"
         priority
         placeholder="blur"
+        width={1920}
+        height={1080}
       />
     </NandoSideImage>
   );

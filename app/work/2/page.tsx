@@ -17,6 +17,8 @@ const Work2 = () => {
             alt="joynup"
             priority
             placeholder="blur"
+            width={1920}
+            height={1080}
           />
         </NandoSideImage>
       }

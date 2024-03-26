@@ -28,6 +28,8 @@ const Work1 = () => {
           alt="millave mockup 2"
           priority
           placeholder="blur"
+          width={1920}
+          height={1080}
         />
       </div>
       <div className="flex max-h-[50%] flex-col items-center gap-6">
@@ -47,6 +49,8 @@ const Work1 = () => {
           alt="millave mockup 2"
           priority
           placeholder="blur"
+          width={1920}
+          height={1080}
         />
       </div>
     </div>

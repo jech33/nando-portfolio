@@ -17,6 +17,8 @@ const Work3 = () => {
             alt="caresync"
             priority
             placeholder="blur"
+            width={1920}
+            height={1080}
           />
         </NandoSideImage>
       }

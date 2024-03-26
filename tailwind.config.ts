@@ -23,6 +23,9 @@ const config: Config = {
         secondary: ["var(--font-caveat)"],
         heading: ["var(--font-owners-text)"],
       },
+      screens: {
+        "2xl": "1920px",
+      },
     },
   },
   plugins: [],

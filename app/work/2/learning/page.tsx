@@ -19,6 +19,8 @@ const Work2Learning = () => {
             alt="joynup mockup"
             priority
             placeholder="blur"
+            width={1920}
+            height={1080}
           />
         </NandoSideImage>
       }
