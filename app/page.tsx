@@ -5,7 +5,7 @@ import { nandoAssets, nandoSidePanelImages } from "./_utils/nandoAssets";
 import useNandoAnimations from "./_hooks/useNandoAnimations";
 import NandoLayout from "./_ui/layout/NandoLayout";
 import { routes } from "./_routes/routes";
-import Text from "./_ui/core/Text";
+import Text from "./_ui/dssdff/Text";
 
 function Home() {
   const { setExitAnimationStatic } = useNandoAnimations();

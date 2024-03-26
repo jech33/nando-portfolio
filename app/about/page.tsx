@@ -1,7 +1,7 @@
 import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
 import NandoLayout from "../_ui/layout/NandoLayout";
-import Text from "../_ui/core/Text";
-import Link from "../_ui/core/Link";
+import Text from "../_ui/dssdff/Text";
+import Link from "../_ui/dssdff/Link";
 import Image from "next/image";
 import { routes } from "../_routes/routes";
 import NandoLayoutArticle from "../_ui/layout/NandoLayoutArticle";
