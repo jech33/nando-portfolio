@@ -26,7 +26,7 @@ import MockupCaresync3 from "../../public/assets/caresync3.png";
 import MockupCaresync4 from "../../public/assets/caresync4.png";
 import MockupCaresync5 from "../../public/assets/caresync5.png";
 import MockupSwiftride1 from "../../public/assets/swiftride1.png";
-import MockupSwiftride2 from "../../public/assets/swiftride2.svg";
+import MockupSwiftride2 from "../../public/assets/swiftride2.png";
 import MockupSwiftride3 from "../../public/assets/swiftride3.png";
 import MockupSwiftride4 from "../../public/assets/swiftride4.png";
 
