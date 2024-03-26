@@ -1,5 +1,6 @@
 import { routes } from "@/app/_routes/routes";
 import Text from "@/app/_ui/core/Text";
+import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
@@ -26,7 +27,7 @@ const Work3 = () => {
       }}
     >
       <NandoLayoutArticle>
-        <div className="flex h-full flex-col items-start gap-6">
+        <NandoArticle>
           <div className="flex flex-col gap-8">
             <Image src={nandoAssets.LogoCaresync} alt={"caresync logo"} />
             <Text tag="h1" variant="heading">
@@ -49,7 +50,7 @@ const Work3 = () => {
             <b>creating a design system based on what was already there</b>,
             improving specific elements upon detecting them.
           </Text>
-        </div>
+        </NandoArticle>
       </NandoLayoutArticle>
     </NandoLayout>
   );

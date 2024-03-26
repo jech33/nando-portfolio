@@ -11,10 +11,10 @@ export default function About() {
       images={nandoSidePanelImages.contact}
       navProps={{
         hasArrowNavigation: true,
-        hrefBack: routes.work3Learning,
+        hrefBack: routes.work4Learning,
       }}
     >
-      <div className="nflex h-full flex-col items-center justify-center gap-20 px-[152px] pb-16 text-center">
+      <div className="flex h-full flex-col items-center justify-center gap-20 px-[152px] pb-16 text-center">
         <Image
           className="absolute top-12"
           src={nandoAssets.CircleSquare}

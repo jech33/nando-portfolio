@@ -6,14 +6,14 @@ import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
 import Image from "next/image";
 
-const Work2 = () => {
+const Work4 = () => {
   return (
     <NandoLayout
       sideComponent={
         <div className="flex h-full w-full items-center justify-center overflow-hidden px-4">
           <Image
-            src={nandoAssets.MockupJoynup1}
-            alt="joynup"
+            src={nandoAssets.MockupSwiftride1}
+            alt="swiftride mockup"
             priority
             placeholder="blur"
           />
@@ -22,35 +22,33 @@ const Work2 = () => {
       navProps={{
         hasArrowNavigation: true,
         hasNavbar: true,
-        hrefBack: routes.work1Learning,
-        hrefNext: routes.work2Design,
+        hrefBack: routes.work3Learning,
+        hrefNext: routes.work4Design,
       }}
     >
       <NandoLayoutArticle>
         <NandoArticle>
           <div className="flex flex-col gap-8">
-            <Image src={nandoAssets.LogoJoynup} alt={"joynup logo"} />
+            <Image src={nandoAssets.LogoSwiftride} alt={"swiftride logo"} />
             <Text tag="h1" variant="heading">
-              A modern alternative to traditional marriage and divorce.
+              A multi-platform solution for personal transportation.
             </Text>
           </div>
           <Text variant="heading3">What is it?</Text>
           <Text>
-            Joynup is a SaaS B2C web platform that helps couples discuss and
-            form relationships, finances, and parenting agreements to strengthen
-            connections and avoid conflict.
+            SwiftRide is a <b>platform ecosystem</b> that allows users to
+            request personal transportation from their smartphone or desktop.
           </Text>
           <Text variant="heading3">What was my role?</Text>
           <Text>
-            <b>I came in as the lead product designer for this project</b>.
-            Besides from a logo sketch and an initial business approach, we were
-            essentially starting from scratch.
+            I came as product designer to <b>redesign</b> a pre existing
+            platform with plenty of improvement opportunities from a usability
+            perspective.
           </Text>
           <Text>
-            The client came with a layout of ideas but needed structure as to
-            how the platform would work. We decided to do a sitemap and some
-            user flows to illustrate the main actions to be performed. I also
-            made wireframes to iterate on ideas quickly.
+            The ecosystem had <b>3 web apps and 1 mobile app</b>. They all
+            needed to be redesigned in tandem, while still maintaining
+            consistency and usability.
           </Text>
         </NandoArticle>
       </NandoLayoutArticle>
@@ -58,4 +56,4 @@ const Work2 = () => {
   );
 };
 
-export default Work2;
+export default Work4;

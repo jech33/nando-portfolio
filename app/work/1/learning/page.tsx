@@ -1,5 +1,6 @@
 import { routes } from "@/app/_routes/routes";
 import Text from "@/app/_ui/core/Text";
+import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
@@ -26,7 +27,7 @@ const Work1 = () => {
       }}
     >
       <NandoLayoutArticle>
-        <div className="flex h-full flex-col items-start gap-6">
+        <NandoArticle>
           <Text tag="h1" variant="heading">
             Looking back...
           </Text>
@@ -60,7 +61,7 @@ const Work1 = () => {
               </Text>
             </li>
           </ul>
-        </div>
+        </NandoArticle>
       </NandoLayoutArticle>
     </NandoLayout>
   );

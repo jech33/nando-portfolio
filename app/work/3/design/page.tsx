@@ -1,5 +1,6 @@
 import { routes } from "@/app/_routes/routes";
 import Text from "@/app/_ui/core/Text";
+import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
@@ -58,7 +59,7 @@ const Work3Design = () => {
       }}
     >
       <NandoLayoutArticle>
-        <div className="flex h-full flex-col items-start gap-6">
+        <NandoArticle>
           <Text tag="h1" variant="heading">
             Adapting designs to each specific user.
           </Text>
@@ -98,7 +99,7 @@ const Work3Design = () => {
             This took work that could potentially last several days and{" "}
             <b>reduced it to a matter of hours, even minutes</b>.
           </Text>
-        </div>
+        </NandoArticle>
       </NandoLayoutArticle>
     </NandoLayout>
   );

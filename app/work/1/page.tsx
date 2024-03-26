@@ -1,5 +1,6 @@
 import { routes } from "@/app/_routes/routes";
 import Text from "@/app/_ui/core/Text";
+import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
@@ -26,7 +27,7 @@ const Work1 = () => {
       }}
     >
       <NandoLayoutArticle>
-        <div className="flex h-full flex-col items-start gap-6">
+        <NandoArticle>
           <div className="flex flex-col gap-8">
             <Image src={nandoAssets.LogoMillave} alt={"millave logo"} />
             <Text tag="h1" variant="heading">
@@ -50,7 +51,7 @@ const Work1 = () => {
             involved building an app through all the steps of the design
             thinking process, <b>from ideation to prototyping</b>.
           </Text>
-        </div>
+        </NandoArticle>
       </NandoLayoutArticle>
     </NandoLayout>
   );
