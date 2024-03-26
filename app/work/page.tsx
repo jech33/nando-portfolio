@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import Link from "../_ui/core/Link";
-import Text from "../_ui/core/Text";
+import Link from "@/app/_ui/core/Link";
+import Text from "@/app/_ui/core/Text";
 import NandoLayout from "../_ui/layout/NandoLayout";
 import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
 import useNandoAnimations from "../_hooks/useNandoAnimations";
