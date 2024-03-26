@@ -3,11 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { nandoAssets } from "../../_utils/nandoAssets";
 import useNandoAnimations from "../../_hooks/useNandoAnimations";
-import ArrowNavigation from "../dssdff/ArrowNavigation";
+import ArrowNavigation from "../core/ArrowNavigation";
 import NandoLayoutSidePanel, {
   NandoLayoutSidePanelProps,
 } from "./NandoLayoutSidePanel";
-import Navbar from "../dssdff/Navbar";
+import Navbar from "../core/Navbar";
 
 type NandoLayoutProps = Readonly<
   {

@@ -1,6 +1,6 @@
 import { routes } from "@/app/_routes/routes";
-import Link from "@/app/_ui/dssdff/Link";
-import Text from "@/app/_ui/dssdff/Text";
+import Link from "@/app/_ui/core/Link";
+import Text from "@/app/_ui/core/Text";
 import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
