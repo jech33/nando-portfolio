@@ -6,22 +6,19 @@ import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
-import Image from "next/image";
 import { ReactNode } from "react";
 
 const Work2Design = () => {
   const SideComponent: ReactNode = (
-    <NandoSideImage>
-      <Image
-        className="max-h-full max-w-[600px] object-contain"
-        src={nandoAssets.MockupJoynup2}
-        alt="joynup mockup 2"
-        priority
-        placeholder="blur"
-        width={1920}
-        height={1080}
-      />
-    </NandoSideImage>
+    <NandoSideImage
+      className="max-h-full max-w-[600px] object-contain"
+      src={nandoAssets.MockupJoynup2}
+      alt="joynup mockup 2"
+      priority
+      placeholder="blur"
+      width={1920}
+      height={1080}
+    />
   );
 
   return (

@@ -11,16 +11,14 @@ const Work3 = () => {
   return (
     <NandoLayout
       sideComponent={
-        <NandoSideImage>
-          <Image
-            src={nandoAssets.MockupCaresync1}
-            alt="caresync"
-            priority
-            placeholder="blur"
-            width={1920}
-            height={1080}
-          />
-        </NandoSideImage>
+        <NandoSideImage
+          src={nandoAssets.MockupCaresync1}
+          alt="caresync"
+          priority
+          placeholder="blur"
+          width={1920}
+          height={1080}
+        />
       }
       navProps={{
         hasArrowNavigation: true,

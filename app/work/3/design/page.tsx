@@ -5,21 +5,18 @@ import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
-import Image from "next/image";
 import { ReactNode } from "react";
 
 const SideComponent: ReactNode = (
-  <NandoSideImage>
-    <Image
-      className="px-16"
-      src={nandoAssets.MockupCaresync2}
-      alt="Caresync mockup 2"
-      priority
-      placeholder="blur"
-      width={1920}
-      height={1080}
-    />
-  </NandoSideImage>
+  <NandoSideImage
+    className="px-16"
+    src={nandoAssets.MockupCaresync2}
+    alt="Caresync mockup 2"
+    priority
+    placeholder="blur"
+    width={1920}
+    height={1080}
+  />
 );
 
 const Work3Design = () => {

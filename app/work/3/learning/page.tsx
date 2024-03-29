@@ -8,17 +8,15 @@ import { nandoAssets } from "@/app/_utils/nandoAssets";
 import Image from "next/image";
 
 const SideComponent = (
-  <NandoSideImage>
-    <Image
-      className="max-h-full max-w-[550px] 2xl:max-w-[650px]"
-      src={nandoAssets.MockupCaresync3}
-      alt="Caresync mockup"
-      priority
-      placeholder="blur"
-      width={1920}
-      height={1080}
-    />
-  </NandoSideImage>
+  <NandoSideImage
+    className="max-h-full max-w-[550px] 2xl:max-w-[650px]"
+    src={nandoAssets.MockupCaresync3}
+    alt="Caresync mockup"
+    priority
+    placeholder="blur"
+    width={1920}
+    height={1080}
+  />
 );
 
 const Work3Learning = () => {

@@ -7,23 +7,20 @@ import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
-import Image from "next/image";
 
 const Work4Learning = () => {
   return (
     <NandoLayout
       sideComponent={
-        <NandoSideImage>
-          <Image
-            className="max-h-full max-w-[650px] object-contain"
-            src={nandoAssets.MockupSwiftride3}
-            alt="swiftride mockup"
-            priority
-            placeholder="blur"
-            width={1920}
-            height={1080}
-          />
-        </NandoSideImage>
+        <NandoSideImage
+          className="max-h-full max-w-[650px] object-contain"
+          src={nandoAssets.MockupSwiftride3}
+          alt="swiftride mockup"
+          priority
+          placeholder="blur"
+          width={1920}
+          height={1080}
+        />
       }
       navProps={{
         hasArrowNavigation: true,
