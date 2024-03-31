@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="absolute bottom-[2.95rem] left-[4.875rem]">
+    <nav className="absolute bottom-[1.875rem] left-[4.875rem]">
       <ul className="flex gap-2">
         {Object.values(navBarRoutes).map((route) => {
           const isCurrentRoute =

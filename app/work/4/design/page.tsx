@@ -37,7 +37,7 @@ const Work4Design = () => {
             developers.
             <br />
             <br />
-            You can see an example of how flows were shown to the right, with
+            You can see an example of how flows were shown to the right, with{" "}
             <b>branching paths and different states</b>.
           </Text>
           <Text tag="h3" variant="heading3">
@@ -45,8 +45,8 @@ const Work4Design = () => {
           </Text>
           <Text>
             When receiving this project, I discovered{" "}
-            <b>hundreds of Figma files</b>
-            spread across myriads of teams without a clear structure.
+            <b>hundreds of Figma files</b> spread across myriads of teams
+            without a clear structure.
           </Text>
           <Text>
             With the main goals of alleviating this and bringing teams back

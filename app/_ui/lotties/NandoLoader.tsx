@@ -1,3 +1,4 @@
+"use client";
 import Lottie from "react-lottie";
 import animationData from "./flow1.json";
 
@@ -11,9 +12,9 @@ const NandoLoader = () => {
   return (
     <Lottie
       options={defaultOptions}
-      isPaused={false}
       height={200}
       width={200}
+      isClickToPauseDisabled
     />
   );
 };

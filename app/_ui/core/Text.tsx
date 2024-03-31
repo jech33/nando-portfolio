@@ -9,7 +9,7 @@ const textVariants = cva(`text-lg 2xl:text-2xl`, {
       heading: "font-heading text-[2.125rem] 2xl:text-[2.625rem] font-medium",
       heading2: "font-heading text-[1.75rem] 2xl:text-[2.25rem] font-medium",
       heading3: "font-heading text-[1.375rem] 2xl:text-[1.875rem] font-medium",
-      subheading: "font-secondary text-[3.5rem] 2xl:text-[4rem] text-primary",
+      subheading: "font-secondary text-[3rem] 2xl:text-[4rem] text-primary",
       body1: "text-lg 2xl:text-2xl leading-[normal]",
       bodyBig: "text-xl 2xl:text-3xl leading-[normal]",
       tooltip:

@@ -11,22 +11,18 @@ function Home() {
   const { setExitAnimationStatic } = useNandoAnimations();
   return (
     <NandoLayout images={nandoSidePanelImages.home}>
-      <div className="flex h-full w-full flex-col items-center justify-center gap-14">
-        <div className="absolute right-7 top-[4.125rem] flex items-start gap-4">
+      <div className="flex h-full w-full flex-col items-center justify-center gap-8 2xl:gap-14">
+        <div className="absolute right-7 top-[5vh] flex items-center gap-4 2xl:top-[4.125rem]">
           <Text variant="tooltip" className="w-[17rem]">
             Image to the right may take a bit to load
           </Text>
-          <Image
-            className="py-6"
-            src={nandoAssets.ArrowRightDoodle}
-            alt="line-doodle"
-          />
+          <Image src={nandoAssets.ArrowRightDoodle} alt="line-doodle" />
         </div>
         <div className="headings-wrapper text-center">
-          <h1 className="font-heading text-[4.5rem] font-[500] 2xl:text-[5rem]">
+          <h1 className="font-heading text-[3.5rem] font-[500] 2xl:text-[5rem]">
             Hernando Saieh
           </h1>
-          <h2 className="mb-7 text-[2.125rem] 2xl:text-[2.625rem]">
+          <h2 className="mb-7 text-[1.75rem] 2xl:text-[2.625rem]">
             Product Designer Portfolio
           </h2>
           <Text tag="h3" variant="subheading">
@@ -41,10 +37,14 @@ function Home() {
               setExitAnimationStatic();
             }}
           >
-            <span className="text-[46px] font-semibold text-primary">
+            <span className="text-[2rem] font-semibold text-primary 2xl:text-[2.875rem]">
               Begin
             </span>
-            <Image src={nandoAssets.ArrowRight} alt="arrow-right" />
+            <Image
+              className="h-10 w-10"
+              src={nandoAssets.ArrowRight}
+              alt="arrow-right"
+            />
           </Link>
         </div>
         <div className="tooltip-container"></div>

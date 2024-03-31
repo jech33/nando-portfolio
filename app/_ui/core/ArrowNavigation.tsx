@@ -18,7 +18,7 @@ const ArrowNavigation = ({
   const backDisabled = !hrefBack ? disabledClass : "";
   const nextDisabled = !hrefNext ? disabledClass : "";
   return (
-    <div className="arrow-navigation__container absolute bottom-8 right-0 flex items-center gap-4 px-6 py-3">
+    <div className="arrow-navigation__container absolute bottom-6 right-0 flex items-center gap-4 px-6 py-3">
       <Link
         className={backDisabled}
         href={hrefBack || ""}

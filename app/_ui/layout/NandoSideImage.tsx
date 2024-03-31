@@ -21,7 +21,7 @@ const NandoSideImage = (
       }
     >
       {loading && (
-        <div className="absolute flex h-full w-full items-center bg-white">
+        <div className="pointer-events-none absolute flex h-full w-full items-center bg-white">
           <NandoLoader />
         </div>
       )}

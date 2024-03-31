@@ -1,3 +1,4 @@
+"use client";
 import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
 import NandoLayout from "../_ui/layout/NandoLayout";
 import Text from "../_ui/core/Text";
@@ -5,8 +6,11 @@ import Link from "../_ui/core/Link";
 import Image from "next/image";
 import { routes } from "../_routes/routes";
 import NandoLayoutArticle from "../_ui/layout/NandoLayoutArticle";
+import useScrollable from "../_hooks/useScrollable";
+import DownChevronIcon from "../_ui/icons/DownChevronIcon";
 
 export default function About() {
+  const { isScrollable, scrollRef, handleScroll } = useScrollable();
   return (
     <NandoLayout
       images={nandoSidePanelImages.about}
@@ -16,8 +20,20 @@ export default function About() {
         hrefNext: routes.work,
       }}
     >
+      {isScrollable && (
+        <div className="absolute bottom-[168px] left-16 z-50 flex items-center gap-2">
+          <DownChevronIcon size={24} className="animate-bounce" />
+          <Text color="textSecondary" className="text-[16px] font-semibold">
+            Scroll to continue
+          </Text>
+        </div>
+      )}
       <NandoLayoutArticle>
-        <div className="no-scrollbar relative mb-16 flex h-full flex-col gap-6 overflow-y-scroll pb-6">
+        <div
+          className="no-scrollbar relative mb-16 flex h-full flex-col gap-6 overflow-y-scroll pb-6"
+          ref={scrollRef}
+          onScroll={handleScroll}
+        >
           <Text variant="heading">About Me</Text>
           <Text>
             Hello! 👋 I&apos;m Hernando Saieh. I currently work as a mid-level
@@ -61,6 +77,13 @@ export default function About() {
               href="https://open.spotify.com/artist/00pztyKZ2dAmLYuZ1BsDFY?si=TuW8ObNwRm-84cD_qtyOgA"
             >
               Spotify
+            </Link>
+            , on{" "}
+            <Link
+              target="_blank"
+              href="https://open.spotify.com/show/4ZFwwLnKpty5Tg1eqU1uCL?si=0adf3da7d084466c"
+            >
+              my podcast
             </Link>{" "}
             and on{" "}
             <Link

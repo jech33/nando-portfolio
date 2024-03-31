@@ -5,6 +5,7 @@ import Text from "@/app/_ui/core/Text";
 import NandoLayout from "../_ui/layout/NandoLayout";
 import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
 import useNandoAnimations from "../_hooks/useNandoAnimations";
+import OrderedList from "../_ui/core/OrderedList";
 
 export default function Work() {
   const { setExitAnimationStatic } = useNandoAnimations();
@@ -25,6 +26,10 @@ export default function Work() {
       title: "SwiftRide",
       href: "/work/4",
     },
+    {
+      title: "Luna",
+      href: "/work/5",
+    },
   ];
   return (
     <NandoLayout
@@ -36,11 +41,11 @@ export default function Work() {
         hrefNext: "/work/1",
       }}
     >
-      <section className="mb-32 flex h-full flex-col items-center justify-center gap-20 px-32 text-center">
+      <section className="mb-32 flex h-full flex-col items-center justify-center gap-8 px-32 text-center 2xl:gap-20">
         <Text tag="h1" variant="heading">
           My Projects
         </Text>
-        <ol className="flex w-[23.75rem] list-decimal flex-col gap-9 font-heading text-[2.25rem] font-medium [&_h2]:pl-1">
+        <OrderedList>
           {projects.map((project) => (
             <li key={project.title}>
               <div className="flex items-center justify-between">
@@ -62,9 +67,9 @@ export default function Work() {
               </div>
             </li>
           ))}
-        </ol>
+        </OrderedList>
         <Text
-          className="absolute bottom-28 max-w-[43.25rem] px-6 2xl:bottom-60 2xl:px-0"
+          className="absolute bottom-20 max-w-[43.25rem] px-6 2xl:bottom-60 2xl:px-0"
           variant="tooltip"
         >
           Pro Tip: You can also navigate the portfolio and come back to this

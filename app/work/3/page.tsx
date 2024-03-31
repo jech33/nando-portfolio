@@ -41,7 +41,7 @@ const Work3 = () => {
           </Text>
           <Text variant="heading3">What was my role?</Text>
           <Text>
-            Arriving as a product designer on this project, the main task was to
+            Arriving as a product designer on this project, the main task was to{" "}
             <b>design a new calendar feature</b> for the existing platform.
           </Text>
           <Text>

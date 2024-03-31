@@ -10,7 +10,7 @@ const SideComponent = () => {
   return (
     <div className="flex h-full w-full flex-col items-center justify-center gap-16 overflow-hidden">
       {imagesLoaded < 2 && (
-        <div className="absolute flex h-full w-full items-center bg-white">
+        <div className="pointer-events-none absolute flex h-full w-full items-center bg-white">
           <NandoLoader />
         </div>
       )}
