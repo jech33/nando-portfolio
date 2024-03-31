@@ -3,13 +3,14 @@
 import Image, { ImageProps } from "next/image";
 import { useState } from "react";
 import NandoLoader from "../lotties/NandoLoader";
+import { twMerge } from "tailwind-merge";
 
 const NandoSideImage = (
   props: ImageProps & {
     containerClassName?: string | null;
   },
 ) => {
-  const { containerClassName, alt, ...imageProps } = props;
+  const { containerClassName, alt, className, ...imageProps } = props;
   const [loading, setLoading] = useState(true);
   return (
     <figure
@@ -26,6 +27,7 @@ const NandoSideImage = (
         </div>
       )}
       <Image
+        className={twMerge("max-h-full max-w-full object-contain", className)}
         alt={alt || "side image"}
         onLoadStart={() => setLoading((prev) => true)}
         onLoad={(e) => {

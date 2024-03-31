@@ -8,13 +8,12 @@ import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
 
-const Work4Learning = () => {
+const Work5Learning = () => {
   return (
     <NandoLayout
       sideComponent={
         <NandoSideImage
-          className="max-h-full max-w-[650px] object-contain"
-          src={nandoAssets.MockupSwiftride3}
+          src={nandoAssets.MockupLuna4}
           alt="swiftride mockup"
           priority
           placeholder="blur"
@@ -25,8 +24,8 @@ const Work4Learning = () => {
       navProps={{
         hasArrowNavigation: true,
         hasNavbar: true,
-        hrefBack: routes.work4Design,
-        hrefNext: routes.work5,
+        hrefBack: routes.work5Design1,
+        hrefNext: routes.contact,
       }}
     >
       <NandoLayoutArticle>
@@ -38,19 +37,18 @@ const Work4Learning = () => {
           <UnorderedList>
             <li>
               <Text>
-                <b>Organization is key</b>. It is tempting to think design ends
-                when screens are handed off to developers, but it is even more
-                important to have a clear file structure that is in sync with
-                developers’ expectations.
+                <b>There’s no one-size-fits-all solution</b>. The single master
+                file approach had worked in past projects, but was ill fitted
+                for this one. Adapting was necessary.
               </Text>
             </li>
             <br />
             <li>
               <Text>
-                <b>Constant communication between team members is necessary</b>.
-                Even if there are hand off meeting, a designer should maintain
-                constant contact with the development team to ensure all the
-                proposed solutions are being built properly.
+                <b>Experimenting can pay off when done correctly</b>. Instead of
+                trying to do what I had done in other projects, I ventured to
+                think outside the box and propose different ways of presenting
+                initiatives, which benefited the project in the long run.
               </Text>
             </li>
           </UnorderedList>
@@ -58,24 +56,17 @@ const Work4Learning = () => {
           <UnorderedList>
             <li>
               <Text>
-                <b>Modernized the visual style of the product</b>, which was
-                using an outdated version of Material Design, to abide by the{" "}
-                <Link
-                  className="font-medium"
-                  href="https://lawsofux.com/aesthetic-usability-effect/"
-                  target="_blank"
-                >
-                  aesthetic-usability effect.
-                </Link>
+                <b>Minimized confusion in the file structure</b>. Proposals and
+                designs in general became much more easily searchable,
+                contributing to the improvement of all team members´ workflows.
               </Text>
             </li>
             <br />
             <li>
               <Text>
-                <b>Simplified several of the existing flows</b>. For instance,
-                the main flow to request transport went from occupying 4 screens
-                to occupying only 2, making better use of real estate and
-                reducing cognitive load.
+                <b>Increased efficiency in internal development process</b>.
+                Initiatives went from taking several weeks for approval to
+                taking a few days.
               </Text>
             </li>
           </UnorderedList>
@@ -85,4 +76,4 @@ const Work4Learning = () => {
   );
 };
 
-export default Work4Learning;
+export default Work5Learning;

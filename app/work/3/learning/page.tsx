@@ -5,11 +5,10 @@ import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
-import Image from "next/image";
 
 const SideComponent = (
   <NandoSideImage
-    className="max-h-full max-w-[550px] 2xl:max-w-[650px]"
+    className="max-h-full max-w-[550px] object-contain 2xl:max-w-[650px]"
     src={nandoAssets.MockupCaresync3}
     alt="Caresync mockup"
     priority

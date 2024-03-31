@@ -25,6 +25,11 @@ import MockupCaresync3 from "../../public/assets/work3-learning.png";
 import MockupSwiftride1 from "../../public/assets/work4.png";
 import MockupSwiftride2 from "../../public/assets/work4-design.png";
 import MockupSwiftride3 from "../../public/assets/work4-learning.png";
+import LogoLuna from "../../public/assets/lunalogo.png";
+import MockupLuna1 from "../../public/assets/work5.png";
+import MockupLuna2 from "../../public/assets/work5-design1.png";
+import MockupLuna3 from "../../public/assets/work5-design2.png";
+import MockupLuna4 from "../../public/assets/work5-learning.png";
 
 export const nandoSidePanelImages = {
   about: [NandoImageAbout1, NandoImageAbout2],
@@ -40,20 +45,25 @@ export const nandoAssets = {
   CurvedLineDoodle,
   LineDoodle,
   LogoMillave,
-  LogoJoynup,
-  LogoCaresync,
-  LogoSwiftride,
   MockupMillave1,
   MockupMillave2,
   MockupMillave3,
   MockupMillave4,
+  LogoJoynup,
   MockupJoynup1,
   MockupJoynup2,
   MockupJoynup3,
+  LogoCaresync,
   MockupCaresync1,
   MockupCaresync2,
   MockupCaresync3,
+  LogoSwiftride,
   MockupSwiftride1,
   MockupSwiftride2,
   MockupSwiftride3,
+  LogoLuna,
+  MockupLuna1,
+  MockupLuna2,
+  MockupLuna3,
+  MockupLuna4,
 };
