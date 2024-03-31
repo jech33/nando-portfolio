@@ -14,6 +14,10 @@ export const routesOrder = [
   "/work/4",
   "/work/4/design",
   "/work/4/learning",
+  "/work/5",
+  "/work/5/design1",
+  "/work/5/design2",
+  "/work/5/learning",
   "/contact",
 ];
 
@@ -33,5 +37,9 @@ export const routes = {
   work4: "/work/4",
   work4Design: "/work/4/design",
   work4Learning: "/work/4/learning",
+  work5: "/work/5",
+  work5Design1: "/work/5/design1",
+  work5Design2: "/work/5/design2",
+  work5Learning: "/work/5/learning",
   contact: "/contact",
 };

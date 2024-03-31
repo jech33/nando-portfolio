@@ -3,20 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { nandoAssets } from "../../_utils/nandoAssets";
 import useNandoAnimations from "../../_hooks/useNandoAnimations";
-import ArrowNavigation from "../core/ArrowNavigation";
 import NandoLayoutSidePanel, {
   NandoLayoutSidePanelProps,
 } from "./NandoLayoutSidePanel";
-import Navbar from "../core/Navbar";
+import Navbar, { NavbarProps } from "../core/Navbar";
 
 type NandoLayoutProps = Readonly<
   {
     children: React.ReactNode;
-    navProps?: {
-      hasArrowNavigation: boolean;
+    navProps?: NavbarProps & {
       hasNavbar?: boolean;
-      hrefNext?: string;
-      hrefBack?: string;
     };
   } & NandoLayoutSidePanelProps
 >;
@@ -31,7 +27,6 @@ const NandoLayout = ({
   sideComponent,
 }: NandoLayoutProps) => {
   const { setExitAnimationRight } = useNandoAnimations();
-  const { hrefNext, hrefBack, hasArrowNavigation, hasNavbar } = navProps;
   return (
     <div className="flex min-h-full w-full bg-background shadow-2xl [&_b]:font-semibold">
       <Image
@@ -41,10 +36,7 @@ const NandoLayout = ({
       />
       <article className="relative flex h-full w-1/2 flex-col items-center justify-center shadow-lg">
         {children}
-        {hasArrowNavigation && (
-          <ArrowNavigation hrefNext={hrefNext} hrefBack={hrefBack} />
-        )}
-        {hasNavbar && <Navbar />}
+        <Navbar {...navProps} />
       </article>
       <div className="relative flex h-full w-1/2 flex-col items-stretch justify-stretch overflow-hidden bg-white">
         {images && <NandoLayoutSidePanel images={images} />}
