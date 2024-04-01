@@ -43,7 +43,7 @@ const Work5Design2 = () => {
           </Text>
           <Text>
             I noticed initiatives were usually presented in seemingly huge flows
-            of different screens. While this worked for development,
+            of different screens. While this worked for development,{" "}
             <b>stakeholders struggled</b> to understand the essence of
             proposals.
           </Text>
