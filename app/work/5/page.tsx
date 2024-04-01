@@ -1,10 +1,13 @@
 import { routes } from "@/app/_routes/routes";
+import Pill from "@/app/_ui/core/Pill";
+import PillContainer from "@/app/_ui/core/PillContainer";
 import Text from "@/app/_ui/core/Text";
 import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
+import { workLabels } from "@/app/_utils/utils";
 import Image from "next/image";
 
 const Work5 = () => {
@@ -35,6 +38,7 @@ const Work5 = () => {
               Physical therapy, delivered through your smartphone.
             </Text>
           </div>
+          <PillContainer labels={workLabels.work5} />
           <Text variant="heading3">What is it?</Text>
           <Text>
             Luna is a mobile app designed to provide therapists and patients the

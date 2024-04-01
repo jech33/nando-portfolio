@@ -1,10 +1,12 @@
 import { routes } from "@/app/_routes/routes";
+import PillContainer from "@/app/_ui/core/PillContainer";
 import Text from "@/app/_ui/core/Text";
 import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
+import { workLabels } from "@/app/_utils/utils";
 import Image from "next/image";
 
 const Work2 = () => {
@@ -35,6 +37,7 @@ const Work2 = () => {
               A modern alternative to traditional marriage and divorce.
             </Text>
           </div>
+          <PillContainer labels={workLabels.work2} />
           <Text variant="heading3">What is it?</Text>
           <Text>
             Joynup is a SaaS B2C web platform that helps couples discuss and

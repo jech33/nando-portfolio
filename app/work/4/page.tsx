@@ -1,10 +1,12 @@
 import { routes } from "@/app/_routes/routes";
+import PillContainer from "@/app/_ui/core/PillContainer";
 import Text from "@/app/_ui/core/Text";
 import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
+import { workLabels } from "@/app/_utils/utils";
 import Image from "next/image";
 
 const Work4 = () => {
@@ -35,6 +37,7 @@ const Work4 = () => {
               A multi-platform solution for personal transportation.
             </Text>
           </div>
+          <PillContainer labels={workLabels.work4} />
           <Text variant="heading3">What is it?</Text>
           <Text>
             SwiftRide is a <b>platform ecosystem</b> that allows users to

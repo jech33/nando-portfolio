@@ -1,10 +1,12 @@
 import { routes } from "@/app/_routes/routes";
+import PillContainer from "@/app/_ui/core/PillContainer";
 import Text from "@/app/_ui/core/Text";
 import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
 import { nandoAssets } from "@/app/_utils/nandoAssets";
+import { workLabels } from "@/app/_utils/utils";
 import Image from "next/image";
 
 const Work1 = () => {
@@ -35,6 +37,7 @@ const Work1 = () => {
               Find the best, most compatible roommate.
             </Text>
           </div>
+          <PillContainer labels={workLabels.work1} />
           <Text variant="heading3">What is it?</Text>
           <Text variant="body1">
             The <b>mobile app</b> millave is meant for Colombian students who
