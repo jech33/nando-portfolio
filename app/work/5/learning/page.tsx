@@ -24,7 +24,7 @@ const Work5Learning = () => {
       navProps={{
         hasArrowNavigation: true,
         hasNavbar: true,
-        hrefBack: routes.work5Design1,
+        hrefBack: routes.work5Design2,
         hrefNext: routes.contact,
       }}
     >
