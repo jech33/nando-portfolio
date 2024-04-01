@@ -49,7 +49,7 @@ const Work5 = () => {
           </Text>
           <Text variant="heading3">What was my role?</Text>
           <Text>
-            I came as <b>product</b> designer to provide ongoing support for
+            I came as <b>product designer</b> to provide ongoing support for
             design initiatives and improvements.
           </Text>
           <Text>
