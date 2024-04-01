@@ -11,6 +11,7 @@ const textVariants = cva(`text-lg 2xl:text-2xl`, {
       heading3: "font-heading text-[1.375rem] 2xl:text-[1.875rem] font-medium",
       subheading: "font-secondary text-[3rem] 2xl:text-[4rem] text-primary",
       body1: "text-lg 2xl:text-2xl leading-[normal]",
+      body2: "text-base 2xl:text-base leading-[normal]",
       bodyBig: "text-xl 2xl:text-3xl leading-[normal]",
       tooltip:
         "font-secondary text-primary text-[1.625rem] 2xl:text-[2.125rem]",
