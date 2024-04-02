@@ -26,6 +26,7 @@ const config: Config = {
       },
       screens: {
         "2xl": "1920px",
+        tall: { raw: "(min-height: 1024px)" },
       },
     },
   },

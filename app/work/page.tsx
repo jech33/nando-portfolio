@@ -6,9 +6,11 @@ import NandoLayout from "../_ui/layout/NandoLayout";
 import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
 import useNandoAnimations from "../_hooks/useNandoAnimations";
 import OrderedList from "../_ui/core/OrderedList";
+import { twMerge } from "tailwind-merge";
 
 export default function Work() {
   const { setExitAnimationStatic } = useNandoAnimations();
+
   const projects = [
     {
       title: "millave",
@@ -41,7 +43,7 @@ export default function Work() {
         hrefNext: "/work/1",
       }}
     >
-      <section className="mb-32 flex h-full flex-col items-center justify-center gap-8 px-32 text-center 2xl:gap-20">
+      <section className="mb-32 flex h-full flex-col items-center justify-center gap-8 px-32 text-center 2xl:mb-52 2xl:gap-20">
         <Text tag="h1" variant="heading">
           My Projects
         </Text>
@@ -69,13 +71,13 @@ export default function Work() {
           ))}
         </OrderedList>
         <Text
-          className="absolute bottom-20 max-w-[43.25rem] px-6 2xl:bottom-60 2xl:px-0"
+          className="2xl:bottom-30 absolute bottom-28 max-w-[43.25rem] px-6 2xl:px-0"
           variant="tooltip"
         >
           Pro Tip: You can also navigate the portfolio and come back to this
           index by using the controls below.
           <Image
-            className="absolute -bottom-[8.25rem] -left-8 hidden -rotate-[75deg] -scale-x-[1] 2xl:block"
+            className="tall:!block relative -bottom-[1.25rem] -left-8 !hidden -rotate-[75deg] -scale-x-[1] 2xl:block"
             src={nandoAssets.CurvedLineDoodle}
             alt="curved arrow doodle"
           />
