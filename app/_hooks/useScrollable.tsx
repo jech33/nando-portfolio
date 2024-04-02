@@ -9,7 +9,7 @@ const useScrollable = () => {
     if (!scrollRef.current) return;
 
     const isBottom =
-      scrollRef.current.scrollHeight - scrollRef.current.scrollTop ===
+      scrollRef.current.scrollHeight - (scrollRef.current.scrollTop + 1) <=
       scrollRef.current.clientHeight;
 
     if (isBottom) {
