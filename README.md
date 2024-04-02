@@ -140,7 +140,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@Javi3re](https://twitter.com/Javi3re) - jechavezch@gmail.com
+Javier Echavez - [@Javi3re](https://twitter.com/Javi3re) - jechavezch@gmail.com
 
 Project Link: [https://github.com/jech33/nando-portfolio](https://github.com/jech33/nando-portfolio)
 
