@@ -1,7 +1,7 @@
 "use client";
 import DownChevronIcon from "../icons/DownChevronIcon";
 import Text from "../core/Text";
-import useScrollable from "@/app/_hooks/useScrollable";
+import useScrollable from "@/app/_ui/hooks/useScrollable";
 
 const NandoLayoutArticle = ({
   children,

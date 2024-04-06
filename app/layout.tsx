@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { caveat, ownersText, poppins } from "./_fonts";
+import { caveat, ownersText, poppins } from "./_ui/fonts";
 import PageTransition from "./_ui/layout/PageTransition";
 
 export const metadata: Metadata = {

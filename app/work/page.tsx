@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "@/app/_ui/core/Link";
 import Text from "@/app/_ui/core/Text";
 import NandoLayout from "../_ui/layout/NandoLayout";
-import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
-import useNandoAnimations from "../_hooks/useNandoAnimations";
+import { nandoAssets, nandoSidePanelImages } from "../_ui/_utils/nandoAssets";
+import useNandoAnimations from "../_ui/hooks/useNandoAnimations";
 import OrderedList from "../_ui/core/OrderedList";
 import { twMerge } from "tailwind-merge";
 
@@ -77,7 +77,7 @@ export default function Work() {
           Pro Tip: You can also navigate the portfolio and come back to this
           index by using the controls below.
           <Image
-            className="tall:!block relative -bottom-[1.25rem] -left-8 !hidden -rotate-[75deg] -scale-x-[1] 2xl:block"
+            className="relative -bottom-[1.25rem] -left-8 !hidden -rotate-[75deg] -scale-x-[1] 2xl:block tall:!block"
             src={nandoAssets.CurvedLineDoodle}
             alt="curved arrow doodle"
           />

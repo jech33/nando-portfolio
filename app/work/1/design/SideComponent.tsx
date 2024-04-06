@@ -1,7 +1,7 @@
 import Link from "@/app/_ui/core/Link";
 import Text from "@/app/_ui/core/Text";
 import NandoLoader from "@/app/_ui/lotties/NandoLoader";
-import { nandoAssets } from "@/app/_utils/nandoAssets";
+import { nandoAssets } from "@/app/_ui/_utils/nandoAssets";
 import Image from "next/image";
 import React, { useState } from "react";
 

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { useNandoStore } from "../_store/nandoStore";
-import { routesOrder } from "../_routes/routes";
+import { useNandoStore } from "../store/nandoStore";
+import { routesOrder } from "../../_routes/routes";
 
 const useRoutesStatus = () => {
   const pathname = usePathname();

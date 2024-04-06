@@ -1,6 +1,6 @@
 import { VariantProps, cva } from "class-variance-authority";
 import React, { HTMLAttributes, ReactNode } from "react";
-import { cn } from "@/app/_utils/utils";
+import { cn } from "@/app/_ui/_utils/utils";
 
 // Customized button variations
 const textVariants = cva(`text-lg 2xl:text-2xl`, {

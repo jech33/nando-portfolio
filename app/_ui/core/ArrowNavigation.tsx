@@ -1,8 +1,8 @@
 "use client";
-import { nandoAssets } from "@/app/_utils/nandoAssets";
+import { nandoAssets } from "@/app/_ui/_utils/nandoAssets";
 import Link from "next/link";
 import Image from "next/image";
-import useNandoAnimations from "@/app/_hooks/useNandoAnimations";
+import useNandoAnimations from "@/app/_ui/hooks/useNandoAnimations";
 
 const ArrowNavigation = ({
   hrefNext,

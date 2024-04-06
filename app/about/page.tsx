@@ -1,12 +1,12 @@
 "use client";
-import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
+import { nandoAssets, nandoSidePanelImages } from "../_ui/_utils/nandoAssets";
 import NandoLayout from "../_ui/layout/NandoLayout";
 import Text from "../_ui/core/Text";
 import Link from "../_ui/core/Link";
 import Image from "next/image";
 import { routes } from "../_routes/routes";
 import NandoLayoutArticle from "../_ui/layout/NandoLayoutArticle";
-import useScrollable from "../_hooks/useScrollable";
+import useScrollable from "../_ui/hooks/useScrollable";
 import DownChevronIcon from "../_ui/icons/DownChevronIcon";
 
 export default function About() {

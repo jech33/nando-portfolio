@@ -5,7 +5,7 @@ import NandoArticle from "@/app/_ui/layout/NandoArticle";
 import NandoLayout from "@/app/_ui/layout/NandoLayout";
 import NandoLayoutArticle from "@/app/_ui/layout/NandoLayoutArticle";
 import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
-import { nandoAssets } from "@/app/_utils/nandoAssets";
+import { nandoAssets } from "@/app/_ui/_utils/nandoAssets";
 import { ReactNode } from "react";
 
 const Work2Design = () => {

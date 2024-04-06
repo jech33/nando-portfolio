@@ -1,9 +1,9 @@
 "use client";
-import useRoutesStatus from "@/app/_hooks/useRoutesStatus";
+import useRoutesStatus from "@/app/_ui/hooks/useRoutesStatus";
 import { routes, routesOrder } from "@/app/_routes/routes";
 import Link from "next/link";
 import BackIcon from "../icons/BackIcon";
-import useNandoAnimations from "@/app/_hooks/useNandoAnimations";
+import useNandoAnimations from "@/app/_ui/hooks/useNandoAnimations";
 import ArrowNavigation from "./ArrowNavigation";
 
 export type NavbarProps = {

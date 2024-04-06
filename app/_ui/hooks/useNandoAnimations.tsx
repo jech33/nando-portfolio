@@ -1,12 +1,12 @@
 import React from "react";
-import { useNandoStore } from "../_store/nandoStore";
+import { useNandoStore } from "../store/nandoStore";
 
 const useNandoAnimations = () => {
   const { setExitAnimationRight, setExitAnimationStatic } = useNandoStore(
     ({ setExitAnimationRight, setExitAnimationStatic }) => ({
       setExitAnimationRight,
       setExitAnimationStatic,
-    })
+    }),
   );
 
   return {

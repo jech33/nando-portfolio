@@ -3,8 +3,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { ReactNode, useEffect, useState } from "react";
-import useRoutesStatus from "../../_hooks/useRoutesStatus";
-import { useNandoStore } from "../../_store/nandoStore";
+import useRoutesStatus from "../hooks/useRoutesStatus";
+import { useNandoStore } from "../store/nandoStore";
 import FrozenRoute from "./FrozenRoute";
 
 const env = process.env.NODE_ENV;

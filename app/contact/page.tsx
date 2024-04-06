@@ -1,4 +1,4 @@
-import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
+import { nandoAssets, nandoSidePanelImages } from "../_ui/_utils/nandoAssets";
 import NandoLayout from "../_ui/layout/NandoLayout";
 import Text from "../_ui/core/Text";
 import Link from "../_ui/core/Link";
