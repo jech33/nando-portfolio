@@ -28,7 +28,7 @@ const NandoLayout = ({
 }: NandoLayoutProps) => {
   const { setExitAnimationRight } = useNandoAnimations();
   return (
-    <div className="flex min-h-full w-full bg-background shadow-2xl [&_b]:font-semibold">
+    <div className="flex min-h-full w-full bg-background shadow-2xl [&_b]:font-semibold [&_strong]:font-semibold">
       <Image
         className="absolute left-0 top-9"
         src={nandoAssets.LineDoodle}

@@ -1,0 +1,45 @@
+import { routes } from "@/app/_routes/routes";
+import NandoSideImage from "@/app/_ui/layout/NandoSideImage";
+import PillContainer from "@/app/_ui/core/PillContainer";
+import { MdxImage as Image } from "@/app/_ui/core/MdxImage";
+import { nandoAssets } from "@/app/_ui/_utils/nandoAssets";
+import { workLabels } from "@/app/_ui/_utils/utils";
+
+export const metadata = {
+  title: "Building out the design",
+  category: "1",
+  subcategory: "design",
+  sideComponent: (
+    <NandoSideImage
+      src={nandoAssets.MockupMillave1}
+      alt="millave"
+      priority
+      placeholder="blur"
+    />
+  ),
+  hrefBack: routes.work,
+  hrefNext: routes.work1Design,
+};
+
+<div className="flex flex-col gap-8">
+  <Image src={nandoAssets.LogoMillave} alt={"millave logo"} />
+
+# Find the best, most compatible roommates
+
+</div>
+
+<PillContainer labels={workLabels.work1} />
+
+The **mobile app** millave is meant for Colombian students who want to move
+to Bogotá and want to **find a roommate** with whom they have
+compatibility. The name comes from Colombian slang; close friends are usually
+called a llave.
+
+## What was my role?
+
+This was my **final project** for the UX/UI Design Diploma from Acámica.
+
+It represented my first learning experience in the world of UX. It involved
+building an app through all the steps of the design thinking process, **from ideation to prototyping**.
+
+export default ({ children }) => <>{children}</>;

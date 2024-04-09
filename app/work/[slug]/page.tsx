@@ -12,14 +12,25 @@ type Params = {
 
 export default async function Post({ params }: Params) {
   const post = await getWorkPostBySlug(params.slug);
+
   if (!post) {
     return notFound();
   }
 
+  const { hrefBack, hrefNext, sideComponent, content } = post;
+
   return (
-    <NandoLayout>
+    <NandoLayout
+      navProps={{
+        hasArrowNavigation: true,
+        hasNavbar: true,
+        hrefBack,
+        hrefNext,
+      }}
+      sideComponent={sideComponent}
+    >
       <NandoLayoutArticle>
-        <NandoArticle>{post.content}</NandoArticle>
+        <NandoArticle>{content}</NandoArticle>
       </NandoLayoutArticle>
     </NandoLayout>
   );
