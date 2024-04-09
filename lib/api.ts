@@ -8,29 +8,37 @@ export type Post = {
   content: string;
   category: string;
   subcategory: string;
-  sideComponent?: React.Component;
+  hrefBack: string;
+  hrefNext: string;
+  sideComponent: React.ReactNode;
 };
 
-const postsDirectory = join(process.cwd(), "app/_posts");
+const workPostsDirectory = join(process.cwd(), "app/_posts/work");
 
-export function getPostSlugs() {
+export function getWorkPostSlugs() {
   return fs
-    .readdirSync(postsDirectory, { withFileTypes: true })
+    .readdirSync(workPostsDirectory, { withFileTypes: true })
     .filter((dirent) => dirent.isFile())
     .map((dirent) => dirent.name);
 }
 
-export function getPostBySlug(slug: string) {
+export async function getWorkPostBySlug(slug: string) {
   const realSlug = slug.replace(/\.mdx$/, "");
-  const fullPath = join(postsDirectory, `${realSlug}.mdx`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(fileContents);
+  const fullPath = join(workPostsDirectory, `${realSlug}.mdx`);
+  const post = await import(`@/app/_posts/work/${realSlug}.mdx`);
 
-  return { ...data, slug: realSlug, content } as Post;
+  const formattedPost = {
+    ...post.metadata,
+    content: post.default(),
+    slug: realSlug,
+  } as unknown as Post;
+
+  return formattedPost;
 }
 
-export function getAllPosts(): Post[] {
-  const slugs = getPostSlugs();
-  const posts = slugs.map((slug) => getPostBySlug(slug));
-  return posts;
+export async function getAllWorkPosts(): Promise<Post[]> {
+  const slugs = getWorkPostSlugs();
+  const postPromises = slugs.map((slug) => getWorkPostBySlug(slug));
+  const posts = await Promise.all(postPromises);
+  return Promise.resolve(posts);
 }

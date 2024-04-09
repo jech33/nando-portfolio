@@ -1,14 +1,17 @@
----
-title: "Building out the design"
-slug: 1-design
-category: 6
-subcategory: design
-sideComponent: "/assets/blog/dynamic-routing/cover.jpg"
-hrefBack: routes.work,
-hrefNext: routes.work1Design,
----
+import { routes } from "@/app/_routes/routes";
+import Design1SideComponent from "../components/Design1SideComponent";
 
-## Building out the design
+export const metadata = {
+  title: "Building out the design",
+  category: "6",
+  subcategory: "design",
+  tags: ["react", "nextjs", "design"],
+  sideComponent: <Design1SideComponent />,
+  hrefBack: routes.work1,
+  hrefNext: routes.work1Learning,
+};
+
+# Building out the design
 
 I went through a **benchmarking process** with the most popular
 roommate search apps in Latin America in order to determine what
@@ -35,3 +38,5 @@ place.
 
 - **Empowered the user** by adding an option to upload photos
   of their living spaces.
+
+export default ({ children }) => <>{children}</>;
