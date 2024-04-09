@@ -29,6 +29,6 @@ export async function generateStaticParams() {
   const posts = await getAllWorkPosts();
 
   return posts.map((post) => ({
-    slug: `${post.category}, ${post.subcategory}`,
+    slug: `${post.category}${post.subcategory}`,
   }));
 }
