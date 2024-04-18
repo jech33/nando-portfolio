@@ -86,10 +86,7 @@ export default function About() {
               my podcast
             </Link>{" "}
             and on{" "}
-            <Link
-              target="_blank"
-              href="https://open.spotify.com/artist/00pztyKZ2dAmLYuZ1BsDFY?si=TuW8ObNwRm-84cD_qtyOgA"
-            >
+            <Link target="_blank" href="http://www.nandologia.com/">
               my blog
             </Link>
             .
