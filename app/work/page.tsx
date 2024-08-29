@@ -6,7 +6,6 @@ import NandoLayout from "../_ui/layout/NandoLayout";
 import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
 import useNandoAnimations from "../_hooks/useNandoAnimations";
 import OrderedList from "../_ui/core/OrderedList";
-import { twMerge } from "tailwind-merge";
 
 export default function Work() {
   const { setExitAnimationStatic } = useNandoAnimations();
@@ -28,10 +27,10 @@ export default function Work() {
       title: "SwiftRide",
       href: "/work/4",
     },
-    {
-      title: "Luna",
-      href: "/work/5",
-    },
+    // {
+    //   title: "Luna",
+    //   href: "/work/5",
+    // },
   ];
   return (
     <NandoLayout
@@ -77,7 +76,7 @@ export default function Work() {
           Pro Tip: You can also navigate the portfolio and come back to this
           index by using the controls below.
           <Image
-            className="tall:!block relative -bottom-[1.25rem] -left-8 !hidden -rotate-[75deg] -scale-x-[1] 2xl:block"
+            className="relative -bottom-[1.25rem] -left-8 !hidden -rotate-[75deg] -scale-x-[1] 2xl:block tall:!block"
             src={nandoAssets.CurvedLineDoodle}
             alt="curved arrow doodle"
           />
