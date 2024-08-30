@@ -43,3 +43,42 @@ export const routes = {
   work5Learning: "/work/5/learning",
   contact: "/contact",
 };
+
+export const workMainRoutes = {
+  index: {
+    label: "Index",
+    path: routes.work,
+    index: routesOrder.indexOf(routes.work),
+  },
+  work1: {
+    label: "millave",
+    path: routes.work1,
+    index: routesOrder.indexOf(routes.work1),
+  },
+  work2: {
+    label: "Joynup",
+    path: routes.work2,
+    index: routesOrder.indexOf(routes.work2),
+  },
+  work3: {
+    label: "CareSync",
+    path: routes.work3,
+    index: routesOrder.indexOf(routes.work3),
+  },
+  work4: {
+    label: "SwiftRide",
+    path: routes.work4,
+    index: routesOrder.indexOf(routes.work4),
+  },
+  // work5: {
+  //   label: "Luna",
+  //   path: routes.work5,
+  //   index: routesOrder.indexOf(routes.work5),
+  // },
+};
+
+export const workMainRoutesMap: {
+  label: string;
+  path: string;
+  index: number;
+}[] = Object.values(workMainRoutes);

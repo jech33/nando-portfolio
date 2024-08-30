@@ -6,32 +6,13 @@ import NandoLayout from "../_ui/layout/NandoLayout";
 import { nandoAssets, nandoSidePanelImages } from "../_utils/nandoAssets";
 import useNandoAnimations from "../_hooks/useNandoAnimations";
 import OrderedList from "../_ui/core/OrderedList";
+import { workMainRoutesMap } from "../_routes/routes";
 
 export default function Work() {
   const { setExitAnimationStatic } = useNandoAnimations();
 
-  const projects = [
-    {
-      title: "millave",
-      href: "/work/1",
-    },
-    {
-      title: "Joynup",
-      href: "/work/2",
-    },
-    {
-      title: "CareSync",
-      href: "/work/3",
-    },
-    {
-      title: "SwiftRide",
-      href: "/work/4",
-    },
-    // {
-    //   title: "Luna",
-    //   href: "/work/5",
-    // },
-  ];
+  const projects = workMainRoutesMap.slice(1);
+
   return (
     <NandoLayout
       images={nandoSidePanelImages.work}
@@ -48,13 +29,13 @@ export default function Work() {
         </Text>
         <OrderedList>
           {projects.map((project) => (
-            <li key={project.title}>
+            <li key={project.path}>
               <div className="flex items-center justify-between">
                 <Text tag="h2" variant="heading2">
-                  {project.title}
+                  {project.label}
                 </Text>
                 <Link
-                  href={project.href}
+                  href={project.path}
                   onClick={() => {
                     setExitAnimationStatic();
                   }}

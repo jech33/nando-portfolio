@@ -26,7 +26,7 @@ const Work4Learning = () => {
         hasArrowNavigation: true,
         hasNavbar: true,
         hrefBack: routes.work4Design,
-        hrefNext: routes.work5,
+        hrefNext: routes.contact,
       }}
     >
       <NandoLayoutArticle>
