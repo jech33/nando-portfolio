@@ -44,11 +44,11 @@ const Navbar = (props: NavbarProps) => {
       path: routes.work4,
       index: routesOrder.indexOf(routes.work4),
     },
-    work5: {
-      name: "Luna",
-      path: routes.work5,
-      index: routesOrder.indexOf(routes.work5),
-    },
+    // work5: {
+    //   name: "Luna",
+    //   path: routes.work5,
+    //   index: routesOrder.indexOf(routes.work5),
+    // },
   };
 
   return (
